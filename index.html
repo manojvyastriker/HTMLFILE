@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 kar gymnesium</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*css Rese */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_1280.jpg);
+        border-image-repeat: none;
+        font-family: 'Baloo 2', cursive;
+        background-position: right;
+
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 0px;
+    }
+
+    .left img {
+        width: 136px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 26px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 44%;
+        margin: 12px auto;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 23px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Baloo 2', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(77, 74, 74);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 36%;
+        border-radius: 28px;
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Baloo 2', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="data:image/png;base64,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"
+                alt="">
+            <div>22 kar gym</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Fitness calculater</a></li>
+                <li> <a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of bhiwandi now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your Gender">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
